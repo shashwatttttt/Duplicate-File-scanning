@@ -9,13 +9,13 @@ A Python script that efficiently scans directories for duplicate files based on 
   3. Prevent Confusion: Eliminate outdated or redundant files.
   4. Improve Performance: Reduce the workload on backup or synchronization tools by removing duplicates.
      
-  🔍 Levels of Finding Duplicate Files
+🔍 Levels of Finding Duplicate Files
   1. Name-Based Detection
      Identifies duplicates based on file names. While fast, it is often inaccurate as files with the same name might differ in content.
   2. Content-Based Detection (This Script)
      It uses a hashing algorithm (MD5 by default) to compare file contents. This ensures that files with different names but identical content are detected.
 
-  🚀 Features:
+🚀 Features:
     - Content-Based Comparison: Finds duplicates using file hashes, ensuring accuracy.
     - Recursive Scanning: Automatically scans all subdirectories.
     - Customizable Filters: Specify file types/extensions to include or exclude.
@@ -23,17 +23,19 @@ A Python script that efficiently scans directories for duplicate files based on 
     - Logging Support: Saves duplicate file details in a log file for easy reference.
     - Command-Line Arguments: Flexible configuration using arguments for paths, filters, and more.
     
-  📥 Installation:
+📥 Installation:
     Prerequisites
+    
     Python 3.x installed on your system.
     Steps: 
+    
     Clone this repository:
     git clone   https://github.com/shashwatttttt/Duplicate-File-scanning.git
 
-  Navigate to the project directory:
-  cd duplicate-file-scanner
+    Navigate to the project directory:
+    cd duplicate-file-scanner
 
-  🎛️ Usage
+🎛️ Usage
   Command-Line Arguments
   Run the script with the following options:
 
@@ -48,7 +50,7 @@ A Python script that efficiently scans directories for duplicate files based on 
   Filter by Extensions:
   . python duplicate_file_scanner.py /path/to/directory --extensions .jpg .png
 
-  Example Output
+Example Output
 
   Duplicate found:
   /path/to/file1.jpg
@@ -58,7 +60,7 @@ A Python script that efficiently scans directories for duplicate files based on 
   /path/to/music.mp3
   /path/to/copy_of_music.mp3
 
-  🛠️ How It Works
+🛠️ How It Works
   Hashing:
   The script reads files in chunks to generate a unique hash using the MD5 algorithm.
 
@@ -68,7 +70,7 @@ A Python script that efficiently scans directories for duplicate files based on 
   Output:
   Duplicates are displayed in the terminal, and optionally saved to a log file for later review.
 
-  🛠️ Customization
+🛠️ Customization
   Change Hashing Algorithm:
   Switch to a stronger algorithm like SHA-256 by modifying the hash_file function:
 
@@ -80,20 +82,21 @@ A Python script that efficiently scans directories for duplicate files based on 
   Automated Duplicate Deletion:
   Extend the script to automatically delete duplicates after confirmation.
 
-  🤝 Contributions
+🤝 Contributions
   Contributions are always welcome! Here's how you can help:
 
   Fork the repository.
   Create a feature branch:
 
-  git checkout -b feature-name
-  Commit your changes:
+    git checkout -b feature-name
+    Commit your changes:
 
-  git commit -m "Add feature"  
-  Push your branch:
+    git commit -m "Add feature"  
+    Push your branch:
 
-  git push origin feature-name  
-  Submit a Pull Request.
+    git push origin feature-name  
+    Submit a Pull Request.
+    
   For major changes, open an issue first to discuss your idea.
 
-  🌟 Like this project? Star the repository to show your support!
+🌟 Like this project? Star the repository to show your support!
