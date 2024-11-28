@@ -16,12 +16,12 @@ A Python script that efficiently scans directories for duplicate files based on 
      It uses a hashing algorithm (MD5 by default) to compare file contents. This ensures that files with different names but identical content are detected.
 
 🚀 Features:
-    - Content-Based Comparison: Finds duplicates using file hashes, ensuring accuracy.
-    - Recursive Scanning: Automatically scans all subdirectories.
-    - Customizable Filters: Specify file types/extensions to include or exclude.
-    - Error Handling: Safely skips inaccessible files without interrupting the scan.
-    - Logging Support: Saves duplicate file details in a log file for easy reference.
-    - Command-Line Arguments: Flexible configuration using arguments for paths, filters, and more.
+    1. Content-Based Comparison: Finds duplicates using file hashes, ensuring accuracy.
+    2. Recursive Scanning: Automatically scans all subdirectories.
+    3. Customizable Filters: Specify file types/extensions to include or exclude.
+    4. Error Handling: Safely skips inaccessible files without interrupting the scan.
+    5. Logging Support: Saves duplicate file details in a log file for easy reference.
+    6. Command-Line Arguments: Flexible configuration using arguments for paths, filters, and more.
     
 📥 Installation:
     Prerequisites
@@ -44,11 +44,11 @@ A Python script that efficiently scans directories for duplicate files based on 
   --extensions: Specify file extensions to include (e.g., .jpg .txt). (Optional)
   Example Commands
   Basic Scan:
-  . python duplicate_file_scanner.py /path/to/directory
+   - python duplicate_file_scanner.py /path/to/directory
   Log Duplicate Details:
-  . python duplicate_file_scanner.py /path/to/directory --log duplicates.log
+   - python duplicate_file_scanner.py /path/to/directory --log duplicates.log
   Filter by Extensions:
-  . python duplicate_file_scanner.py /path/to/directory --extensions .jpg .png
+   - python duplicate_file_scanner.py /path/to/directory --extensions .jpg .png
 
 Example Output
 
@@ -64,11 +64,14 @@ Example Output
   Hashing:
   The script reads files in chunks to generate a unique hash using the MD5 algorithm.
 
+
   Content Matching:
   Files with identical hashes are flagged as duplicates, even if their names differ.
 
+
   Output:
   Duplicates are displayed in the terminal, and optionally saved to a log file for later review.
+
 
 🛠️ Customization
   Change Hashing Algorithm:
